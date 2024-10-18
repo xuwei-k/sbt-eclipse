@@ -18,6 +18,7 @@
 
 package com.typesafe.sbteclipse.core
 
+import sbt.given
 import sbt.Keys.commands
 import sbt.internal.inc.PlainVirtualFileConverter
 import sbt.io.Path.rebase

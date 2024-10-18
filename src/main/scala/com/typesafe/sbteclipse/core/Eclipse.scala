@@ -18,6 +18,7 @@
 
 package com.typesafe.sbteclipse.core
 
+import sbt.given
 import EclipsePlugin.{
   EclipseClasspathEntry,
   EclipseTransformerFactory,
@@ -39,7 +40,6 @@ import sbt.{
   Configurations,
   EvaluateTask,
   File,
-  Inc,
   Incomplete,
   Keys,
   ModuleID,
@@ -53,7 +53,6 @@ import sbt.{
   TaskKey,
   ThisBuild,
   UpdateReport,
-  Value
 }
 import sbt.fileToRichFile
 import sbt.internal.BuildStructure

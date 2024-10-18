@@ -15,6 +15,13 @@ lazy val root = (project in file("."))
         dynverAssertTagVersion.value
         s
       },
+crossScalaVersions += "3.3.4",
+ (pluginCrossBuild / sbtVersion) := {
+      scalaBinaryVersion.value match {
+        case "2.12" => "1.5.8"
+        case _      => "2.0.0-M2"
+      }
+    },
       libraryDependencies ++= Seq(
         "org.scalaz"             %% "scalaz-core"   % "7.2.36",
         "org.scalaz"             %% "scalaz-effect" % "7.2.36",
